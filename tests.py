@@ -1,5 +1,5 @@
 import unittest
-from mutated import *
+from main import *
 import nose
 
 

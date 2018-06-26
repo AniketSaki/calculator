@@ -1,3 +1,6 @@
+import logging
+
+
 def add(a, b):
     return a + b
 
@@ -15,7 +18,9 @@ def div(a, b):
 
 
 if __name__ == '__main__':
+    logging.basicConfig(format="%(asctime)s %(message)s", filename="logger.log", level=logging.INFO)
     print("Welcome!")
+    logging.info(" first run")
     while True:
         num1 = float(input("Enter first number"))
         num2 = float(input("Enter second number"))
